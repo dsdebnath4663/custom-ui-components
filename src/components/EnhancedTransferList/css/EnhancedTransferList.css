@@ -1,0 +1,84 @@
+/* Enhanced Transfer List Component Styles */
+
+.enhanced-transfer-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.list {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.list h2 {
+  margin-bottom: 10px;
+}
+
+.list input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.list li:hover {
+  background-color: #e0e0e0;
+}
+
+.transfer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transfer-buttons button {
+  margin: 5px 0;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.transfer-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Draggable Item Styles */
+
+.list li {
+  user-select: none; /* Prevent text selection while dragging */
+}
+
+.list li::marker {
+  display: none; /* Hide default list item marker */
+}
+
+.list li.dragging {
+  opacity: 0.5; /* Reduce opacity of dragged item */
+  cursor: grab; /* Change cursor style while dragging */
+}
+
+.list li.dragging:active {
+  cursor: grabbing; /* Change cursor style when dragging is active */
+}

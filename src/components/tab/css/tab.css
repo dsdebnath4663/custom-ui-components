@@ -1,0 +1,35 @@
+/* Tab Component Styles */
+
+.tabs {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px;
+}
+
+.tab-header {
+  display: flex;
+}
+
+.tab-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab-item:hover {
+  background-color: #f0f0f0;
+}
+
+.tab-item.active {
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: 2px solid #0056b3;
+}
+
+.tab-content {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}

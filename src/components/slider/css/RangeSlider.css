@@ -1,0 +1,28 @@
+.range-slider-container {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.range-slider {
+  position: absolute;
+  width: calc(100% - 20px); /* Adjust width to fit container */
+  height: 20px; /* Adjust height as needed */
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.start {
+  z-index: 1; /* Ensure start thumb appears on top */
+}
+
+.end {
+  z-index: 2; /* Ensure end thumb appears on top */
+}
+
+.slider-value {
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust top offset as needed */
+  left: 0;
+}
