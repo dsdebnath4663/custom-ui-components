@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.toggle-btn {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-container.open {
+  display: block;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}

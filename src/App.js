@@ -1,10 +1,24 @@
 import "./App.css";
-import DataTable from "./components/DataTable/DataTable";
-import jsonData from "./components/DataTable/data.json";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/routing/Layout";
+import DataTableMain from "./components/DataTable/DataTableMain";
+import AutocompleteCompo from "./components/autocomplete/AutocompleteCompo";
 function App() {
-  const { users, products } = jsonData;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            {/* <Route index element={<Layout />} /> */}
+            <Route path="DataTableMain" element={<DataTableMain />} />
+            <Route path="AutocompleteCompo" element={<AutocompleteCompo />} />
 
-  return <DataTable data={users} />;
+            {/* <Route path="*" element={<NoPage />} />  */}
+          </Route>
+        </Routes>
+      </BrowserRouter>{" "}
+    </>
+  );
 }
 
 export default App;
